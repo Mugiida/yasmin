@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+	background-color: white;
+}
+.hiwar {
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: rgb(141, 141, 237);
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+hr {
+	color: rgb(141, 141, 237);
+	height: 10px;
+	background-color: rgb(141, 141, 237);
+	margin: 25px 0 25px 0;
+}
+.part1 {
+	height: 100px;
+	background-color: rgb(141, 141, 237);
+}
+.gbox {
+	text-decoration: none;
+	padding: 10px 15px 10px 15px;
+	font-weight: bold;
+	color: rgb(141, 141, 237);
+	border: solid 2px rgb(141, 141, 237);
+	margin: 15px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+}
+.gbox:hover {
+	transition: all 0.2s;
+	background-color: rgb(141, 141, 237);
+	color: white;
+}
+ol {
+	list-style-type: none; /* Remove default list styling */
+	counter-reset: tip-counter; /* Initialize counter */
+
+	font-size: 18px;
+	font-weight: bold;
+}
+ol li {
+	counter-increment: tip-counter; /* Increment counter for each list item */
+	margin-bottom: 10px; /* Add some spacing between list items */
+}
+ol li::before {
+	content: ". " counter(tip-counter) "  : "; /* Prefix each list item with "Tip X: " */
+	font-weight: bold; /* Make the prefix bold */
+}
