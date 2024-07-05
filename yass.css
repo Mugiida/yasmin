@@ -56,3 +56,13 @@ ol li::before {
 	content: ". " counter(tip-counter) "  : "; /* Prefix each list item with "Tip X: " */
 	font-weight: bold; /* Make the prefix bold */
 }
+.ans {
+	color: purple;
+	cursor: none;
+	margin-right: 10px;
+}
+input {
+	cursor: pointer;
+	padding: 40px;
+	margin-right: 10px;
+}
